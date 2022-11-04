@@ -35,10 +35,12 @@
 
     <section id="tasks" class="m-4">
 
-      <div class="input-group d-flex justify-content-center align-middle">
-
-        <input class="form-control" type="text" placeholder="Add a new task here">
-        <button class="btn btn-outline-secondary" type="button">Add task</button>
+      <div class="input-area">
+        <div class="input-group">
+          <input class="form-control" type="text" placeholder="Add a new task here">
+          <button class="btn btn-outline-secondary" type="button">Add task</button>
+        </div>
+        <p class="mt-4">{{errorMessage}}</p>
 
       </div>
 
@@ -51,7 +53,8 @@
           :class="{'done': task.done}">
           <span>{{task.name}}</span>
           <i
-          class="fa-solid fa-xmark"></i>
+          class="fa-solid fa-xmark"
+          @click.stop="removeTask(index)"></i>
         </li>
         </ul>
         <!-- <h4>All tasks done <i class="fa-solid fa-thumbs-up"></i></h4> -->
