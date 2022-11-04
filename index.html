@@ -26,15 +26,19 @@
 
   <div id="app" class="container jt-container">
 
+    <!-- Header start -->
     <header class="m-4">
       <div class="logo d-flex justify-content-start align-middle">
         <img :src="logoImage" alt="logo">
       </div>
       <h1 class="jt-title d-flex justify-content-center align-middle py-2">My todo list</h1>
     </header>
+    <!-- Header start -->
 
+    <!-- Main start -->
     <section id="tasks" class="m-4">
 
+      <!-- Input to add new task -->
       <div class="input-area mx-auto w-50">
         <div class="input-group mx-auto">
           <input 
@@ -52,7 +56,9 @@
         class="text-center mt-4 alert-message"
         v-if="errorMessage">{{errorMessage}}</p>
       </div>
+      <!-- Input end -->
 
+      <!-- Task list start -->
       <div class="tasks-area py-4">
         <ul v-if="tasks.length > 0">
           <li 
@@ -68,12 +74,16 @@
         </ul>
         <h4 v-else class="text-center m-0">All tasks done <i class="fa-solid fa-thumbs-up ms-1"></i></h4>
       </div>
+      <!-- Task list end -->
 
     </section>
+    <!-- Main end -->
 
+    <!-- Footer start -->
     <footer class="footer text-center">
       <p>Made by Jessica</p>
     </footer>
+    <!-- Footer end -->
 
 
   </div>
