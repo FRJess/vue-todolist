@@ -50,7 +50,6 @@ createApp({
         this.newTaskName = '';
       }
     }
-
   }
 
 }).mount('#app')
