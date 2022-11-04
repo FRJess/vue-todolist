@@ -28,7 +28,7 @@ createApp({
 
   methods:{
     removeTask(index){
-      this.errorMessage ='';
+      this.errorMessage = '';
       if(this.tasks[index].done){
         this.tasks.splice(index,1);
       }else{

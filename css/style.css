@@ -5,11 +5,15 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #37718E;
+}
+
 .jt-container{
   margin: 0 auto;
   padding: 20px 0;
   width: 70%;
-  /* background-color: aquamarine; */
+  /* background-color: #FFEE88; */
 }
 
 /* .logo{
@@ -17,29 +21,39 @@
 } */
 
 .logo img{
-  width: 300px;
+  width: 200px;
 }
 
-/* .input-area{
+.jt-title{
+  color: #8EE3EF;
+}
+
+.input-area{
   padding: 20px 0;
-} */
+}
 
-/* .input-area input, .input-area button{
-  padding: 10px 15px;
+.input-area button{
+  color: #8EE3EF;
+  background-color: #254E70;
+}
+
+.input-group{
+  width: 500px;
+}
+
+.alert-message{
+  color: white;
+  background-color: #C33C54;
   border-radius: 10px;
-} */
+  padding: 10px;
+  width: 500px;
+}
 
-/* .input-area input{
-  width: 300px;
-  margin-right: 20px;
-} */
-
-.tasks-area{
-  background-color: #F5F7F7;
+/* .tasks-area{
   border-radius: 10px;
   padding: 10px;
   margin: 40px 0;
-}
+} */
 
 .tasks-area ul{
   padding: 0;
@@ -53,14 +67,21 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid lightgray; */
   cursor: pointer;
+  background-color: #254E70;
+  color: #8EE3EF;
 }
 
 .task:hover{
-  background-color: white;
+  background-color: #C33C54;
 }
 
 .task.done span{
   text-decoration: line-through;
+}
+
+footer{
+  color: #8EE3EF;
 }
