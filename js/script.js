@@ -38,7 +38,7 @@ createApp({
       }
     },
     createTask(){
-      this.errorMessage ='';
+      this.errorMessage = '';
       if(this.newTaskName.length < 5){
         this.errorMessage = 'Task name must have at least 5 characters.';
       }else{

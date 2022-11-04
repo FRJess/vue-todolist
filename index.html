@@ -48,7 +48,9 @@
           type="button"
           @click="createTask()">Add task</button>
         </div>
-        <p class="text-center mt-4 alert-message">{{errorMessage}}</p>
+        <p 
+        class="text-center mt-4 alert-message"
+        v-if="errorMessage">{{errorMessage}}</p>
       </div>
 
       <div class="tasks-area py-4">
