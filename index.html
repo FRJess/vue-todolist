@@ -45,14 +45,16 @@
       <div class="tasks-area">
         <ul>
           <li 
-          class="task"
-          v-for="(task, index) in tasks">
+          class="task border-0 rounded"
+          v-for="(task, index) in tasks"
+          @click="task.done = !task.done"
+          :class="{'done': task.done}">
           <span>{{task.name}}</span>
           <i
           class="fa-solid fa-xmark"></i>
         </li>
         </ul>
-        <!-- <h4>All tasks done &#128077;</h4> -->
+        <!-- <h4>All tasks done <i class="fa-solid fa-thumbs-up"></i></h4> -->
       </div>
 
     </section>
