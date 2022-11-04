@@ -41,6 +41,10 @@
   margin: 40px 0;
 }
 
+.tasks-area ul{
+  padding: 0;
+}
+
 .tasks-area ul li{
   list-style: none;
 }
