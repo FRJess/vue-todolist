@@ -64,7 +64,7 @@ createApp({
         this.tasks.unshift(newTask);
         this.newTaskName = '';
       }
-    }
+    },
   }
 
 }).mount('#app')
