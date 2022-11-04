@@ -1,3 +1,7 @@
-// VARIABLES DECLARATION AND INIZIALIZATION
+// VUE
 
-// FUNCTIONS
+const { createApp } = Vue;
+
+createApp({
+
+}).mount('#app')

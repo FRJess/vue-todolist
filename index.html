@@ -12,13 +12,16 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3"></script>
+
   <title>Todo List</title>
 </head>
 
 <!-- Inizio Body -->
 <body>
 
-  <div class="container jt-container">
+  <div id="app" class="container jt-container">
 
     <header class="m-4">
       <div class="logo d-flex justify-content-center align-middle">
@@ -40,7 +43,7 @@
         <ul>
           <li class="task">new task</li>
         </ul>
-        <h4 v-else>All tasks done &#128077;</h4>
+        <h4>All tasks done &#128077;</h4>
       </div>
 
     </section>
