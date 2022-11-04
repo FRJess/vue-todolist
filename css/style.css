@@ -9,7 +9,7 @@
   margin: 0 auto;
   padding: 20px 0;
   width: 70%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 /* .logo{
@@ -19,3 +19,17 @@
 .logo img{
   width: 300px;
 }
+
+/* .input-area{
+  padding: 20px 0;
+} */
+
+/* .input-area input, .input-area button{
+  padding: 10px 15px;
+  border-radius: 10px;
+} */
+
+/* .input-area input{
+  width: 300px;
+  margin-right: 20px;
+} */
