@@ -33,3 +33,14 @@
   width: 300px;
   margin-right: 20px;
 } */
+
+.tasks-area{
+  background-color: #F5F7F7;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px 0;
+}
+
+.tasks-area ul li{
+  list-style: none;
+}
