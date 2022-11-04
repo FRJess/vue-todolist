@@ -1,59 +1,7 @@
 /* GENERAL */
 *{
   margin: 0;
-  padding: 0;
+  padding:  0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* MAIN */
-
-.jt-container{
-  margin: 0 auto;
-  padding: 20px 0;
-  width: 70%;
-}
-
-.logo{
-  text-align: center;
-}
-
-.logo img{
-  width: 300px;
-}
-
-.input-area{
-  padding: 20px 0;
-}
-
-.input-area input, .input-area button{
-  padding: 10px 15px;
-  border-radius: 10px;
-}
-
-.input-area input{
-  width: 300px;
-  margin-right: 20px;
-}
-
-.tasks-area{
-  background-color: #F5F7F7;
-  border-radius: 10px;
-  padding: 40px;
-}
-
-.task{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1px solid lightgray;
-  cursor: pointer;
-}
-
-.task:hover{
-  background-color: white;
-}
-
-.task.done span{
-  text-decoration: line-through;
-}
