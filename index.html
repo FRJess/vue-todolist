@@ -37,8 +37,16 @@
 
       <div class="input-area">
         <div class="input-group">
-          <input class="form-control" type="text" placeholder="Add a new task here">
-          <button class="btn btn-outline-secondary" type="button">Add task</button>
+          <input 
+          class="form-control" 
+          type="text" 
+          placeholder="Add a new task here"
+          @keyup.enter="createTask()"
+          v-model.trim="newTaskName">
+          <button 
+          class="btn btn-outline-secondary" 
+          type="button"
+          @click="createTask()">Add task</button>
         </div>
         <p class="mt-4">{{errorMessage}}</p>
 

@@ -8,6 +8,7 @@ createApp({
     return{
       logoImage: 'img/logo.png',
       errorMessage: '',
+      newTaskName:'',
       tasks:[
         {
           name: 'Comprare il pane',
@@ -31,7 +32,22 @@ createApp({
       if(this.tasks[index].done){
         this.tasks.splice(index,1);
       }else{
-        this.errorMessage = 'You have to complete this task before to remove it '
+        // this.isAlertShow = this.errorMessage,
+        this.errorMessage = 'Wait a minute...You have to complete this task before to remove it.';
+        // this.alertClass = ;
+      }
+    },
+    createTask(){
+      this.errorMessage ='';
+      if(this.newTaskName.length < 5){
+        this.errorMessage = 'Task name must have at least 5 characters.';
+      }else{
+        const newTask = {
+          name: this.newTaskName,
+          done: false
+        }
+        this.tasks.unshift(newTask);
+        this.newTaskName = '';
       }
     }
 
